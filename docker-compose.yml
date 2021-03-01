@@ -1,0 +1,35 @@
+
+version:
+
+services:
+  app-server:
+    build:
+      context: jumia-app-server
+      dockerfile: Dockerfile
+    ports:
+
+    restart: always
+    networks:
+      - backend
+      - frontend
+
+  app-client:
+    build:
+      context: jumia-app-client
+      dockerfile: Dockerfile
+
+    ports:
+
+    restart: always
+    depends_on:
+      - app-server
+    networks:
+      - frontend
+
+
+volumes:
+  db-data:
+
+networks:
+  backend:
+  frontend:

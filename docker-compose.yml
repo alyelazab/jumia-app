@@ -1,5 +1,4 @@
-
-version:
+version: '3.7'
 
 services:
   app-server:
@@ -7,8 +6,9 @@ services:
       context: jumia-app-server
       dockerfile: Dockerfile
     ports:
-
+      - "8080:8080"
     restart: always
+
     networks:
       - backend
       - frontend
@@ -17,15 +17,13 @@ services:
     build:
       context: jumia-app-client
       dockerfile: Dockerfile
-
     ports:
-
+      - "9090:80"
     restart: always
     depends_on:
       - app-server
     networks:
       - frontend
-
 
 volumes:
   db-data:

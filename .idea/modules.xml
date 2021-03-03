@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/jumia-app.iml" filepath="$PROJECT_DIR$/.idea/jumia-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jumia-app-server/jumia-app-server.iml" filepath="$PROJECT_DIR$/jumia-app-server/jumia-app-server.iml" />
     </modules>
   </component>
 </project>

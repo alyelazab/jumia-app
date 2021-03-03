@@ -33,4 +33,4 @@ COPY --from=build ${DEPENDENCY}/BOOT-INF/classes /app
 
 COPY sample.db sample.db
 
-ENTRYPOINT ["java","-cp","app:app/lib/*","com.JumiaServices.task.TaskApplication"]
+ENTRYPOINT ["java","-cp","app:app/lib/*","com.jumia.app.server.JumiaApplicationServer"]

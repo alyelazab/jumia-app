@@ -26,3 +26,4 @@ The first time the project goes up it takes around 10 minutes as docker caches a
 The next time it comes up, it should be instantaneous.
 
 For the front-end, you should expect to see this:
+![Screen Shot 2021-03-03 at 2 55 01 PM](https://user-images.githubusercontent.com/59670782/109809654-3dfa7d00-7c31-11eb-9662-1a8246fde8c0.png)

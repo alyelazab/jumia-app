@@ -3,19 +3,22 @@ Jumia customer's phone validation application
 
 To build up the project using docker, you have two options.
 
-Option 1:
+- Option 1:
 
-In directory jumia-app run: docker-compose up
+In directory jumia-app run: 
 
-Go to http://127.0.0.1:9090/
+docker-compose up
 
-Option 2:
+Then Go to http://127.0.0.1:9090/
+
+- Option 2:
 
 In directory jumia-app-server run: 
 
 docker build -t jumia-app/server .
 
 docker run -p 8080:8080 jumia-app/server
+
 
 In directory jumia-app-client run:
 

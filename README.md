@@ -30,6 +30,8 @@ For the front-end, you should expect to see this:
 
 You can sort and filter the table based on the Name, Number, Country Code, Country and State fields. To sort the table, all you have to do is click
 on the desired sorted field. To filter a field, click on the the sidebar at the far right end of any of the fields. You can then choose how you want
-to filter the field. The following screenshots are a demonstration of both a sort and a filter:
+to filter the field. The following screenshots are a demonstration of both a sort on the Name field, and a filter on the Country field:
+
 ![Screen Shot 2021-03-03 at 3 06 14 PM](https://user-images.githubusercontent.com/59670782/109810767-9da55800-7c32-11eb-8a97-169e909ffefd.png)
+
 ![Screen Shot 2021-03-03 at 3 15 15 PM](https://user-images.githubusercontent.com/59670782/109811284-494ea800-7c33-11eb-8a0c-5ff9175319ec.png)

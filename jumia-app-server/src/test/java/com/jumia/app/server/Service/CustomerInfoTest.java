@@ -43,4 +43,5 @@ public class CustomerInfoTest {
         Collections.sort(customerInfoList, Comparator.comparingInt(CustomerInfo::getId));
         Assert.assertEquals(customerInfoList,customerInfoService.getCustomerInfo());
     }
+
 }

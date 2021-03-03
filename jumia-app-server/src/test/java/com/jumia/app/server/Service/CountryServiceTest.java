@@ -15,15 +15,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@RunWith(MockitoJUnitRunner.class)
 public class CountryServiceTest {
+    @InjectMocks
+    CountryService countryService;
 
-    private CountryService countryService;
-    @Before
-    public void setUp() {
-        countryService = new CountryService();
-
-    }
     @Test
     public void test_getCountryNameFromCountryCode(){
 

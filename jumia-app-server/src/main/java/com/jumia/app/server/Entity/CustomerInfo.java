@@ -4,6 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Objects;
 
 @Entity
 @Table(name = "customer_info")
@@ -84,5 +85,22 @@ public class CustomerInfo {
     }
 
     public CustomerInfo() {
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CustomerInfo that = (CustomerInfo) o;
+        return id == that.id &&
+                name.equals(that.name) &&
+                number.equals(that.number) &&
+                Objects.equals(countryCode, that.countryCode) &&
+                Objects.equals(country, that.country) &&
+                Objects.equals(state, that.state);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, number, countryCode, country, state);
     }
 }

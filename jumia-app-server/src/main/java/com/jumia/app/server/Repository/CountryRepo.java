@@ -6,8 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 
-public interface CountryRepo extends JpaRepository<CountryProps,Integer> {
-//    @Query(value = "SELECT phone FROM customer")
-//    public List<Integer> findAllNumbers();
+public interface CountryRepo extends JpaRepository<CountryProps, Integer> {
 
 }
